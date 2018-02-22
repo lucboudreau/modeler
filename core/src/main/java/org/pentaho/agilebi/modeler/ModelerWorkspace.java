@@ -402,6 +402,7 @@ public class ModelerWorkspace extends XulEventSourceAdapter implements Serializa
     field.setFieldTypeDesc( node.getLogicalColumn().getDataType().getName() );
     switch ( node.getLogicalColumn().getDataType() ) {
       case DATE:
+      case TIMESTAMP:
         field.setFormatstring( DataFormatHolder.DATE_FORMATS );
         break;
       case NUMERIC:

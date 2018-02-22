@@ -120,6 +120,7 @@ public class MeasuresPropertiesForm extends AbstractModelerNodeForm<BaseAggregat
     if ( null != t.getLogicalColumn() ) {
       switch ( t.getLogicalColumn().getDataType() ) {
         case DATE:
+        case TIMESTAMP:
           setFormatstring( DataFormatHolder.DATE_FORMATS );
           break;
         case NUMERIC:
